@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+#navbar .leftnav {
+  margin: 1.4%;
+  padding: 5px;
+  color: white;
+  font-size: 2rem;
+}
+#navbar .rightnav ul {
+  display: flex;
+}
+#navbar .rightnav ul li {
+  list-style: none;
+}
+#navbar .rightnav ul li a {
+  text-decoration: none;
+  color: black;
+  margin: 20px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+#navbar .rightnav ul li a:hover{
+color: brown;
+border-radius: 23px;
+}
+#home {
+  background: linear-gradient(
+    to left,
+    rgb(112, 4, 4),
+    rgb(50, 3, 3),
+    rgb(27,3,2),  
+    rgb(0, 0, 0)
+  );
+  height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#home .left {
+  color: white;
+  font-size: 3.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10%;
+  position: relative;
+}
+@keyframes text-show{
+  0%{
+clip-path: inset(0% 0% 0% 0%);
+    visibility: visible;
+    
+  }
+  100%{
+clip-path: inset(0% 0% 0% 100%);
+visibility: hidden;
+  }
+}
+#home .left h2 .anime{
+width: 100%;
+height: 30%;
+background-color: red;
+position: absolute;
+top: 35%;
+left: 0;
+animation-name: text-show;
+animation-duration: 1.5s;
+animation-timing-function: ease-in-out;
+visibility: hidden;
+}
+#home .left .btn {
+  font-size: 2.5rem;
+  margin: 20px;
+  border: 2px solid black;
+}
+#home .left .btn a{
+  text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+#home .left span{
+    color: rgba(246, 0, 0, 0.712);
+    font-size: 6rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#home .right{
+    margin: 10%;
+}
+#home .right img{
+width: 250px;
+border: 2px solid white;
+border-radius: 50%;
+overflow: hidden;
+}
+
+#about #design{
+display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#about .left{
+  margin: 5%;
+}
+#about .left img{
+  width: 100%;
+}
+#about .right p{
+  font-size: 1.4rem;
+  color: rgb(0, 0, 0);
+  font-family: Arial, Helvetica, sans-serif;
+}
+#about .right{
+  margin-right: 5%;
+}
+
+#skills #Skill_Content{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 0px;
+}
+#skills .skill_box{
+  height: 380px;
+  margin: 20px;
+  border: 2px solid white ;
+  border-radius: 23px;
+  box-shadow: 2px 2px 5px rgb(193, 193, 193); 
+  background-color: white;
+}
+#skills .skill_box:hover{
+  transform: scale(1.05);
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+#skills .skill_box .logos{
+  display: flex;
+  justify-content: center;
+  height: 150px;
+  margin: 20px 0;
+}
+#skills .skill_box .content{
+  text-align: center;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#skills .skill_box .content h2{
+  margin: 5px;
+  font-family: sans-serif;
+}
+#project{
+  margin: 5px;
+
+}
+#project_cards{
+ display: grid;
+grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+gap: 20px;
+}
+ #project_cards .projects_container{
+  border: 2px solid whitesmoke;
+  background-color: white;
+  border-radius: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: 2px 2px 5px rgb(193, 193, 193); 
+}
+#project_cards .projects_container .project_img img{
+  height: 200px;
+  margin: 10px;
+}
+#project_cards .projects_container .project_content{
+  padding:15px;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.project_content button{
+margin: 10px;
+}
+.project_content button a{
+  text-decoration: none;
+  color: black;
+}
+#cards{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+gap: 20px;
+}
+#cards .boxs{
+  background-color: white;
+  height: 180px;
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid white;
+  box-shadow: 2px 2px 5px rgb(193, 193, 193); 
+  border-radius: 10px;
+  margin: 40px 20px;
+  padding: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#cards .boxs:hover{
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+
+}
+.boxs .content h2{
+  padding: 5px;
+}
+.boxs .content div{
+  line-height: 1.6;
+}
+#cards .icon img{
+  height: 50px;
+}
+
+.primary{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+}
+.headings{
+  font-size: 3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color:black;
+  font-weight: 750;
+}
+span{
+   color: rgba(246, 0, 0, 0.712);
+}
+button{
+  padding: 2px 4px;
+  background-color: rgb(245, 26, 26);
+  border-radius: 23px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 2px solid black; 
+}
+button:hover{
+  background-color: green;
+  color: white;
+}
+@media screen and (max-width:1380px) {
+  #cards .boxs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .boxs .content{
+    text-align: center;
+    padding: 0;
+  }
+}
+@media screen and (max-width:1040px) {
+  #navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 25vh;
+}
+#navbar .leftnav {
+  color: white;
+  font-size: 1.4rem;
+}
+
+  #navbar .rightnav ul li a {
+  margin: 10px;
+  margin-top: 40px;
+  font-size: 1rem;
+}
+
+#home .left {
+  font-size: 2.5rem;
+}
+#home .left .btn {
+  font-size: 1.5rem;
+}
+#home .left span{
+    font-size: 4rem;
+}
+#home .right img{
+width: 150px;
+}
+#about .left img{
+  width: 90%;
+}
+#about .right p{
+  font-size: 1.1rem;
+}
+}
+@media screen and (max-width:775px){
+
+
+#home .left {
+  font-size: 2rem;
+}
+#home .left .btn {
+  font-size: 1rem;
+}
+#about{
+  margin: 20px;
+}
+#about #design{
+display: flex;
+flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#about .right p{
+  font-size: 0.8rem;
+  text-align: center;
+}
+#about .left img{
+  width: 90%;
+  height: 200px;
+}
+#skills .skill_box{
+  height: 250px;
+  margin: 40px;
+}
+#skills .skill_box .logos{
+  height: 50px;
+}
+
+#skills .skill_box .content h2{
+font-size: 1.4rem;
+}
+#skills .skill_box .content p{
+  font-size: 0.9rem;
+}
+.headings{
+  font-size: 2rem;
+  font-weight: 650;
+}
+
+#project_cards .projects_container .project_img img{
+  height: 130px;
+}
+#project_cards .projects_container .project_content{
+  font-size: 0.9rem;
+}
+
+.project_content button a{
+  font-size: 0.8rem;
+}
+
+#cards .boxs{
+  height: 160px;
+  margin: 10px 60px;
+}
+#cards .boxs .content{
+  font-size: 0.8rem;
+}
+#cards .icon img{
+  height: 20px;
+}
+
+}
+@media  screen and (max-width:635px) {
+    #navbar {
+  height: 10vh;
+}
+#navbar .leftnav {
+  font-size: 1rem;
+}
+
+  #navbar .rightnav ul li a {
+display: none;
+}
+#home .right img{
+display: none;
+}
+#cards .boxs{
+  height: 160px;
+  margin: 10px 60px;
+}
+#cards .boxs .content{
+  font-size: 0.6rem;
+}
+#cards .icon img{
+  height: 15px;
+}
+
+}
